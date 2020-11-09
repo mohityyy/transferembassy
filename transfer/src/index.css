@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+/* for nav bar */
+.navbar{
+  background-color:white ;
+  color: #3498db;
+  
+}
+.navbar h3{
+  color: #3498db;
+}
+/*for sidebar */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color:#3498db ;
+  position:absolute;
+  height: 1000vh;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.sidebar a.active{
+  background-color: white;
+  color: #3498db;
+  
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color:#82c4f0;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+
+  height: 1000px;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+/*transfer list div data*/
+.data {
+  width: 50%;
+}
+/*transfer list div form group1 for input anfd button in transflist.js*/
+.form-group1{
+  
+  display: inline-block;
+  
+  color: white;
+  display: flex;
+  width: 86%;
+  margin-top: 10px;
+  padding-right: 10px;
+  
+}
+/*transfer list div thead for table heading*/
+.thead{
+  background-color: #3498db;
+  color: white;
+}
+/*transfer list div table for table data*/
+.table{
+  background-color: #82c4f0;
+}
+
+/*transferlist.js button */
+.btn{
+  margin-top: 1px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+ 
+  border-radius: 10px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+  
+
+}
+.btn:hover{
+  background: #3498db;
+   color: #fff;
+}
+
+
+
